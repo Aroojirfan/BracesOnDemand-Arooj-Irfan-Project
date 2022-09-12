@@ -1,0 +1,23 @@
+.queries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15rem;
+  margin-left: 5rem;
+}
+.queries h1 {
+  font-size: 3.2rem;
+  font-weight: 8rem;
+}
+.queries p {
+  color: grey;
+  font-size: 2rem;
+}
+.queries li::marker {
+  color: red;
+  content: "✓ ";
+}
+li {
+  font-size: 2rem;
+  color: grey;
+}

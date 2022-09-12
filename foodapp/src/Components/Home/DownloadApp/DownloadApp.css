@@ -1,0 +1,77 @@
+.download-container {
+  margin-top: 15rem;
+}
+.download-container h1 {
+  color: #d70f64;
+  font-size: 4rem;
+  font-family: "Bree Serif", serif;
+  margin-left: 5rem;
+}
+.download-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #d70f64;
+  width: 120%;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  margin-left: -3rem;
+}
+.download-container1 h1 {
+  color: white;
+  margin-left: 2rem;
+}
+.download-container1 p {
+  font-size: 2rem;
+  color: white;
+  align-items: left;
+  margin-left: 2rem;
+}
+.download-container1 img {
+  width: 25%;
+  margin-left: 100rem;
+  margin-top: -15rem;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5rem; 
+  background-color: black; /* Green */
+  border: none;
+  width: 10%;
+  color: white;
+  padding: 2rem;
+   padding-top: 2rem;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  /* margin: 1rem 4rem;  */
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button1 {
+  height: 6.0rem;
+  margin-top: -6rem; 
+  display: flex;
+  flex-direction: row;
+} 
+/* .button2 {
+  height: 6.0rem;
+  margin-top:2rem; 
+
+} */
