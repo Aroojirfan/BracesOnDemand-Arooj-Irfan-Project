@@ -1,8 +1,8 @@
 import React from "react";
 import "./DownloadApp.css";
 
-const DownloadApp = () => {
-  return (
+const DownloadApp = () => 
+  
     <div className="download-container">
       <h1>Put us in your pocket</h1>
       <div className="download-container1">
@@ -25,7 +25,7 @@ const DownloadApp = () => {
         </a>
       </div>
     </div>
-  );
-};
+  
+
 
 export default DownloadApp;
