@@ -10,7 +10,6 @@ import {  STATUSES }from "../../store/Reducer/Addresses";
 
 const Home = () => {
   const {data,status} = useSelector((state) => state.address);
-   console.log(data)
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAddresses());// eslint-disable-next-line react-hooks/exhaustive-deps
