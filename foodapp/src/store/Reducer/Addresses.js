@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { addresses } from "../Api/Api";
+import { addresses } from "../../Api/Api";
 import axios from "axios";
 export const STATUSES = Object.freeze({
   IDLE: "idle",
@@ -14,6 +14,7 @@ const addressSlice = createSlice({
     status: STATUSES.IDLE,
   },
   extraReducers: (builder) => {
+  
     builder
       .addCase(fetchAddresses.pending, (state) => {
         state.status = STATUSES.LOADING;
@@ -22,8 +23,10 @@ const addressSlice = createSlice({
         state.data = action.payload;
         state.status = STATUSES.IDLE;
       })
-      .addCase(fetchAddresses.rejected, (state) => {
+      .addCase(fetchAddresses.rejected, (state,action) => {
         state.status = STATUSES.ERROR;
+        
+        
       });
   },
 });
@@ -31,8 +34,7 @@ const addressSlice = createSlice({
 export default addressSlice.reducer;
 
 // Thunks
-export const fetchAddresses = createAsyncThunk("products/fetch", async () => {
+export const fetchAddresses = createAsyncThunk("address", async () => {
   const response = await axios.get("/addresses");
-  console.log(response.data);
-  return response.data.data;
+  return response.data;
 });

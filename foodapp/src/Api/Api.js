@@ -1,10 +1,11 @@
-import Restaurant from "../DB/RestaurantData";
-import Addresses from "../DB/Addresses";
-import BranchesFoodApp from "../DB/BranchesFoodApp";
-import MenuCategory from "../DB/MenuCategory";
-import MenuItems from "../DB/MenuItems";
-import RestaurantCategory from "../DB/RestaurantCategory";
-import Menu from "../DB/Menu";
+import Restaurant from "../store/DB/RestaurantData";
+import Addresses from "../store/DB/Addresses";
+
+import BranchesFoodApp from "../store/DB/BranchesFoodApp";
+import MenuCategory from "../store//DB/MenuCategory";
+import MenuItems from "../store/DB/MenuItems";
+import RestaurantCategory from "../store/DB/RestaurantCategory";
+import Menu from "../store/DB/Menu";
 import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 

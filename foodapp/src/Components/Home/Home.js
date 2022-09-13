@@ -6,15 +6,22 @@ import About from "./About/About";
 import Branches from "./Branches/Branches";
 import DownloadApp from "./DownloadApp/DownloadApp";
 import Queries from "./Queries/Queries";
+import {  STATUSES }from "../../store/Reducer/Addresses";
 
 const Home = () => {
-  const data = useSelector((state) => state.address.data.Addresses);
-
+  const {data,status} = useSelector((state) => state.address);
+   console.log(data)
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchAddresses);// eslint-disable-next-line react-hooks/exhaustive-deps
+    dispatch(fetchAddresses());// eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
+  if (status === STATUSES.LOADING) {
+    return <h2>Loading....</h2>;
+}
 
+if (status === STATUSES.ERROR) {
+    return <h2>Something went wrong!</h2>;
+}
   return (
     <div className="container1">
       <div className="container">
@@ -24,8 +31,8 @@ const Home = () => {
         </p>
         <img src={process.env.PUBLIC_URL + "static/Images/bg-2.jpg"} alt="" />
         <select className="custom-select">
-           <option value="" selected>Choose your option</option>
-          {data.map((cur) => {
+           <option value="" defaultValue>Choose your option</option>
+          {status===STATUSES.IDLE && data.Addresses.map((cur) => {
             const { id,address} = cur;
             return (
               <option value="choose" key={id}>

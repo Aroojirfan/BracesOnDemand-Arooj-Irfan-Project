@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { restaurant } from "../Api/Api";
+import { restaurant } from "../../Api/Api";
 import axios from "axios";
 export const STATUSES = Object.freeze({
   IDLE: "idle",

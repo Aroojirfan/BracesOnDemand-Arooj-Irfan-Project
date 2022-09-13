@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { branches } from "../Api/Api";
+import { branches } from "../../Api/Api";
 import axios from "axios";
 export const STATUSES = Object.freeze({
   IDLE: "idle",
