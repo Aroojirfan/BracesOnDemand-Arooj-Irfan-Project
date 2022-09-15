@@ -1,7 +1,7 @@
 import React from "react";
 import "./Queries.css";
 const Queries = () => {
-  return (
+ 
     <div className="queries">
       <h1>
         Order food and groceries online from the best restaurants and shops on
@@ -149,7 +149,7 @@ const Queries = () => {
       </p>{" "}
       <br></br>
     </div>
-  );
+ 
 };
 
 export default Queries;
