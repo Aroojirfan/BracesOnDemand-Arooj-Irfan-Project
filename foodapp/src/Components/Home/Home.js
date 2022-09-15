@@ -31,7 +31,7 @@ if (status === STATUSES.ERROR) {
         <img src={process.env.PUBLIC_URL + "static/Images/bg-2.jpg"} alt="" />
         <select className="custom-select">
            <option value="" defaultValue>Choose your option</option>
-          {status===STATUSES.IDLE && data.Addresses.map((cur) => {
+          { data.Addresses && data.Addresses.map((cur) => {
             const { id,address} = cur;
             return (
               <option value="choose" key={id}>

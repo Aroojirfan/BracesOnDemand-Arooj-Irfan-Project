@@ -24,7 +24,7 @@ const Branches = () => {
         <h1>Find us in these cities and many more!</h1>
   
         <section className="main-card--cointainer">
-          {status===STATUSES.IDLE && data.BranchesFoodApp.map((curElem) => {
+          {data.BranchesFoodApp && data.BranchesFoodApp.map((curElem) => {
             const { id, city, image } = curElem;
             return (
               <div key={id}>
