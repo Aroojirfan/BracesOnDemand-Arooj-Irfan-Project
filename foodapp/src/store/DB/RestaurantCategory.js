@@ -13,7 +13,7 @@ const RestaurantCategory = [
   },
   {
     id: 4,
-    category_name:"Tradionals"
+    category_name:"Traditionals"
   },
 
 ];

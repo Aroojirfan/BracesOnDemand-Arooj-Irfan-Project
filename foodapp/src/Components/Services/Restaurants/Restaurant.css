@@ -1,15 +1,12 @@
-.branches{
-  margin-top: -120rem;
-  
-
+.Restaurant {
+  margin-top: 20rem;
 }
-.branches h1{
+/* .branches h1 {
   color: #d70f64;
   font-size: 4rem;
   font-family: "Bree Serif", serif;
-  margin-left: -15em;
-
-}
+  margin-left: 7rem;
+} */
 .subtle {
   color: #d70f64;
 }
@@ -27,18 +24,19 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
+  margin-left: 5rem;
 }
 
 .card-container img {
   max-width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .card {
   background-color: #fff;
-  padding: 30px;
+  padding: 10px;
   position: relative;
   box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
   z-index: 1;
@@ -49,7 +47,7 @@
 }
 
 .card-number {
-  margin-top: 15px;
+  margin-top: -2rem;
 }
 
 .card-circle {
@@ -64,6 +62,7 @@
 }
 
 .card-author {
+  color:grey;
   display: block;
   font-size: 12px;
   letter-spacing: 0.5px;
@@ -73,10 +72,10 @@
 
 .card-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 60px;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 200;
   line-height: 60px;
-  margin: 10px 0;
+  margin: -2rem 0;
   text-transform: capitalize;
 }
 
@@ -84,28 +83,14 @@
   /* display: inline-block; */
   font-weight: 300;
   line-height: 22px;
-  margin: 10px 0;
+  padding-top: 3rem;
 }
 
 .card-read {
-  cursor: pointer;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 6px;
   margin: 5px 0 20px;
   position: relative;
-  text-align: right;
   text-transform: uppercase;
-}
-
-.card-read:after {
-  background-color: #b8bddd;
-  content: "";
-  display: block;
-  height: 1px;
-  position: absolute;
-  top: 9px;
-  width: 75%;
 }
 
 .card-tag {
@@ -144,6 +129,11 @@
     justify-content: space-around;
   }
 }
-
-/* ---------- Button styles ------------------ */
-
+.card-author1 {
+  color:#d70f64;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
