@@ -15,6 +15,7 @@
     "axios": "^0.27.2",
     "axios-mock-adapter": "^1.21.2",
     "bootstrap": "^5.2.1",
+    "formik": "^2.2.9",
     "immer": "^9.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,12 +24,14 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.2.1",
     "redux-thunk": "^2.4.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

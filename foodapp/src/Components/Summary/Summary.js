@@ -1,6 +1,6 @@
 import React from "react";
 import "./Summary.css";
-const Summary = () => (
+const Summary = () => 
   <div className="container1">
     <h1>Food Delivery App </h1>
     <div className="SummaryContainer">
@@ -28,6 +28,6 @@ const Summary = () => (
       <br></br>
     </div>
   </div>
-);
+
 
 export default Summary;

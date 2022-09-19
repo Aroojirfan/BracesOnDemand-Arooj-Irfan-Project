@@ -7,6 +7,7 @@ import CarouselComponent from "./Carousel/CarouselComponent";
 import Restaurants from "./Restaurants/Restaurants";
 import BreakFastImages from "./Carousel/assets/Images/Breakfast";
 import DessertImages from "./Carousel/assets/Images/Dessert";
+
 const Services = () => {
   const images = [
     { id: 1, name: "BreakFast", Images: BreakFastImages },
@@ -32,6 +33,7 @@ const Services = () => {
       </div>
       {searchItem === "" ? <CarouselComponent images={images} /> : null}
       <Restaurants searchItem={searchItem} />
+      
     </div>
   );
 };

@@ -29,7 +29,6 @@ h2 {
 .footer ul {
   list-style: none;
   padding-left: 0;
-  
 }
 
 .footer li {
@@ -46,11 +45,15 @@ h2 {
 .r-footer {
   display: flex;
   flex-flow: row wrap;
-  
 }
 
 .r-footer > * {
-  flex: 1 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 3 50%;
+
+  padding-left: 2rem;
   margin-right: 1.25em;
 }
 
@@ -67,14 +70,17 @@ h2 {
   text-align: center;
   color: #999;
   padding-top: 50px;
-  
 }
 
 .l-footer p {
   padding-right: 20%;
   color: #999;
 }
-
+.hello {
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+}
 @media screen and (min-width: 600px) {
   .r-footer > * {
     flex: 1;

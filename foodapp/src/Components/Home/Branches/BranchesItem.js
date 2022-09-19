@@ -1,7 +1,7 @@
 import React from "react";
 import "./Branches.css";
-const BranchesItem = ({ id, city, image }) => {
-  return (
+const BranchesItem = ({ id, city, image }) => 
+  
     <div className="card-container" key={id}>
       <div className="card">
         <div className="card-body">
@@ -10,7 +10,4 @@ const BranchesItem = ({ id, city, image }) => {
         <img src={image} alt="images" className="card-media" />
       </div>
     </div>
-  );
-};
-
 export default BranchesItem;

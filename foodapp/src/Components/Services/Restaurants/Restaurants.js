@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { STATUSES } from "../../../store/Reducer/Restaurant";
 import { fetchProducts } from "../../../store/Reducer/Restaurant";
-import { fetchrestaurantCategory } from "../../../store/Reducer/RestaurantCategory";
+import { NavLink } from "react-router-dom";
 import "./Restaurant.css";
 import RestaurantItem from "./RestaurantItem";
 
@@ -27,10 +27,10 @@ const Restaurants = ({ searchItem }) => {
 
   return (
     <div className="Restaurant">
+  
       <h1>All Restaurants</h1>
       <section className="main-card--cointainer">
-        {data.Restaurant &&
-          data.Restaurant.filter((curElem) => {
+        {data.Restaurant?.filter((curElem) => {
             if (searchItem == "") {
               return curElem;
             } else if (
@@ -43,18 +43,16 @@ const Restaurants = ({ searchItem }) => {
             ) {
               return curElem;
             }
-          }).map((curElem) => {
-            const {
-              id,
+          }).map(({ id,
               name,
               Rating,
               image,
               description,
               Deliveryfee,
-              Restaurant_category_id,
-            } = curElem;
-            return (
-              <div className="card-container" key={id}>
+              Restaurant_category_id}) => 
+           
+           
+              <div className="card-container" key={`restaurant-${id}`}>
                 <div className="card ">
                   <div className="card-body">
                     <img src={image} alt="images" className="card-media" />
@@ -75,11 +73,14 @@ const Restaurants = ({ searchItem }) => {
                       />
                     </div>
                   </div>
-                  <span className="card-tag  subtle">Check Now</span>
+                  <NavLink to={`/Menu/${id}`}>
+                    
+                    <span className="card-tag  subtle">Check Now</span>
+                  </NavLink>
                 </div>
               </div>
-            );
-          })}
+            
+          )}
       </section>
     </div>
   );
