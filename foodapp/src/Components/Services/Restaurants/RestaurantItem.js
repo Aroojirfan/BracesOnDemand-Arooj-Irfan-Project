@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { STATUSES } from "../../../store/Reducer/RestaurantCategory";
 import { fetchrestaurantCategory } from "../../../store/Reducer/RestaurantCategory";
+
 const RestaurantItem = ({ Restaurant_category_id }) => {
   const { data, status } = useSelector((state) => state.category);
  
@@ -18,14 +19,10 @@ const RestaurantItem = ({ Restaurant_category_id }) => {
   if (status === STATUSES.ERROR) {
     return <h2>Something went wrong!</h2>;
   }
-  
-
-
- 
   return (
     <div>
-      {data.RestaurantCategory &&
-        data.RestaurantCategory.filter(
+      {
+        data.RestaurantCategory?.filter(
           (e) => e.id === Restaurant_category_id
         ).map((e) => `category: ${e.category_name}`)}
     </div>

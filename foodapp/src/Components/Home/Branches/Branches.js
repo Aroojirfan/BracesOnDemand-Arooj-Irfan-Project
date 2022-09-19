@@ -7,7 +7,7 @@ import BranchesItem from "./BranchesItem";
 
 const Branches = () => {
   const { data, status } = useSelector((state) => state.branch);
-  
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBranches()); // eslint-disable-next-line
@@ -18,26 +18,21 @@ const Branches = () => {
 
   if (status === STATUSES.ERROR) {
     return <h2>Something went wrong!</h2>;
-  }if (status === STATUSES.IDLE) {
-    return (
-      <div className="branches">
-        <h1>Find us in these cities and many more!</h1>
-  
-        <section className="main-card--cointainer">
-          {data.BranchesFoodApp && data.BranchesFoodApp.map((curElem) => {
-            const { id, city, image } = curElem;
-            return (
-              <div key={id}>
-                {" "}
-                <BranchesItem id={id} city={city} image={image} />
-              </div>
-            );
-          })}
-        </section>
-      </div>
-    );
   }
-  
+  return (
+    <div className="branches">
+      <h1>Find us in these cities and many more!</h1>
+
+      <section className="main-card--cointainer">
+        {data.BranchesFoodApp?.map(({ id, city, image }) => (
+          <div key={`branches-${id}`}>
+            {" "}
+            <BranchesItem id={id} city={city} image={image} />
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 };
 
 export default Branches;

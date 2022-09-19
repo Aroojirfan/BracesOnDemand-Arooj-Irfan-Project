@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAddresses } from "../../store/Reducer/Addresses";
@@ -39,17 +39,15 @@ const Home = () => {
           <option value="" defaultValue>
             Choose your option
           </option>
-          {data.Addresses &&
-            data.Addresses.map((cur) => {
-              const { id, address } = cur;
-              return (
-                <option value="choose" key={id}>
-                  {address}
-                </option>
-              );
-            })}
+          {data.Addresses?.map(({ id, address }) => 
+            <option value="choose" key={`address-${id}`}>
+              {address}
+            </option>
+          )}
         </select>{" "}
-        <button className="button1" onClick={navigateHome}>Delivery</button>
+        <button className="button1" onClick={navigateHome}>
+          Delivery
+        </button>
         <span className="login-text">Select Location</span>
       </div>
       <About />

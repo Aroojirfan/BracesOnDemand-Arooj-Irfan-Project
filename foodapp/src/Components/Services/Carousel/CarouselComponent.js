@@ -16,33 +16,23 @@ const CarouselComponent = ({ images }) => {
 
   return (
     <>
-      {images &&
-        images.map((card) => {
-          return (
-            <div className="crousel" key={card.id}>
-              <div className="content">
-                <h1>{card.name}</h1>
-                <Slider {...sliderSettings}>
-                  {card.Images &&
-                    card.Images.map((curElem) => {
-                      return (
-                        <div className="containercrousel" key={curElem.id}>
-                          <div key={curElem.id}>
-                            <img
-                              alt={curElem.id}
-                              src={curElem.image}
-                              width="370"
-                              height="150"
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-                </Slider>
-              </div>
+      {
+        images?.map(({ id, name, Images }) => (
+          <div className="crousel" key={`images-${id}`}>
+            <div className="content">
+              <h1>{name}</h1>
+              <Slider {...sliderSettings}>
+                { Images?.map(({ id, image }) => 
+                    <div className="containercrousel" key={`crousel-${id}`}>
+                      <div key={id}>
+                        <img alt={id} src={image} width="370" height="150" />
+                      </div>
+                    </div>
+                  )}
+              </Slider>
             </div>
-          );
-        })}
+          </div>
+        ))}
     </>
   );
 };
