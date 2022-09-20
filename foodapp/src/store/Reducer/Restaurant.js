@@ -31,7 +31,8 @@ const productSlice = createSlice({
 export default productSlice.reducer;
 
 // Thunks
-export const fetchProducts = createAsyncThunk("products/fetch", async () => {
+export const fetchProducts = createAsyncThunk("product/fetch", async () => {
   const response = await axios.get("/restaurant");
+ 
   return response.data;
 });

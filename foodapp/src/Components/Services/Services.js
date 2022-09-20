@@ -33,7 +33,7 @@ const Services = () => {
       </div>
       {searchItem === "" ? <CarouselComponent images={images} /> : null}
       <Restaurants searchItem={searchItem} />
-      
+      {/* <Utillity searchItem={searchItem} /> */}
     </div>
   );
 };
