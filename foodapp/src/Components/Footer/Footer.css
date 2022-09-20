@@ -76,11 +76,7 @@ h2 {
   padding-right: 20%;
   color: #999;
 }
-.hello {
-  display: flex;
-  flex-direction: row;
-  font-size: larger;
-}
+
 @media screen and (min-width: 600px) {
   .r-footer > * {
     flex: 1;

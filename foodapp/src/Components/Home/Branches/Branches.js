@@ -7,7 +7,6 @@ import BranchesItem from "./BranchesItem";
 
 const Branches = () => {
   const { data, status } = useSelector((state) => state.branch);
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBranches()); // eslint-disable-next-line
