@@ -18,7 +18,7 @@ const Queries = () =>
       like Islamabad, Lahore, Rawalpindi, and Karachi. Did you know you can
       order your groceries and more from foodpanda, too? Check out foodpanda
       shops for favourite partners like Al-Fatah, Greenvalley and more. Sit back
-      and relax – let foodpanda Pakistan take the pressure off your shoulders.
+      and relax  let foodpanda Pakistan take the pressure off your shoulders.
     </p>
     <br></br>
     <br></br>
@@ -143,7 +143,7 @@ const Queries = () =>
       If you choose delivery, a foodpanda rider will collect your order from the
       restaurant and take it to your chosen delivery address. If you choose
       Pick-Up, you can takeaway your food directly from the restaurant for extra
-      savings – and to jump to the front of the queue. Pick-Up orders are
+      savings  and to jump to the front of the queue. Pick-Up orders are
       available for restaurants only.
     </p>{" "}
     <br></br>
