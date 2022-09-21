@@ -4,11 +4,11 @@ import { BrowserRouter as Router } from "react-router-dom";
 import RoutesPages from "./Pages/RoutesPages";
 const UserContext = createContext(undefined);
 const UserDispatchContext = createContext(undefined);
-const App = ({ children }) => {
-  const [userDetails, setUserDetails] = useState( "");
+const App = () => {
+  const [cityDetails, setAddressDetails] = useState( "");
   return (
-    <UserContext.Provider value={userDetails}>
-      <UserDispatchContext.Provider value={setUserDetails}>
+    <UserContext.Provider value={cityDetails}>
+      <UserDispatchContext.Provider value={setAddressDetails}>
       <Router>
         <RoutesPages />
       </Router>

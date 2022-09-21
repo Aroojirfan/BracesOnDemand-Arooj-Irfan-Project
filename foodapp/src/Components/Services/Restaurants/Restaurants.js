@@ -23,7 +23,7 @@ const Restaurants = ({ searchItem }) => {
   }
 
   if (status === STATUSES.ERROR) {
-    return <h2></h2>;
+    return <h2>Something went wrong</h2>;
   }
   const filteredData = getData(searchItem, data);
 
