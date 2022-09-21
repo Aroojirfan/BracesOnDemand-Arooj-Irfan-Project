@@ -1,6 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 import { branches } from "../../Api/Api";
+import { Store } from "redux";
 import axios from "axios";
+import getStoredState from "redux-persist/es/getStoredState";
 export const STATUSES = Object.freeze({
   IDLE: "idle",
   ERROR: "error",
@@ -32,6 +35,10 @@ export default branchSlice.reducer;
 
 // Thunks
 export const fetchBranches = createAsyncThunk("branch/fetch", async () => {
-  const response = await axios.get("/branches");
-  return response.data;
+  // console.log(getState())
+  // const state = getState()
+  // console.log(state)
+  
+    const response = await axios.get("/branches");
+   return response.data;
 });

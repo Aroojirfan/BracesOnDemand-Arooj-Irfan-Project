@@ -31,11 +31,9 @@ const restaurantCategorySlice = createSlice({
 export default restaurantCategorySlice.reducer;
 
 // Thunks
-export const fetchrestaurantCategory = createAsyncThunk(
-  "category",
-  async () => {
+export const fetchrestaurantCategory = createAsyncThunk("category/fetch", async () => {
     const response = await axios.get("/restaurantCategory");
-   
+    
     return response.data;
   }
 );

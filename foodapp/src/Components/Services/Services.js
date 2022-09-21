@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useFormik } from "formik";
+import React, { useState } from "react";
+
 import "./Services.css";
 import FastFoodImages from "./Carousel/assets/Images/FastFood";
 import DesiImages from "./Carousel/assets/Images/Desi";
@@ -9,6 +9,7 @@ import BreakFastImages from "./Carousel/assets/Images/Breakfast";
 import DessertImages from "./Carousel/assets/Images/Dessert";
 
 const Services = () => {
+
   const images = [
     { id: 1, name: "BreakFast", Images: BreakFastImages },
     { id: 2, name: "Fast Food", Images: FastFoodImages },
@@ -33,7 +34,6 @@ const Services = () => {
       </div>
       {searchItem === "" ? <CarouselComponent images={images} /> : null}
       <Restaurants searchItem={searchItem} />
-      {/* <Utillity searchItem={searchItem} /> */}
     </div>
   );
 };

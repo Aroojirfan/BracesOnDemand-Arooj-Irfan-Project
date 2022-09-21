@@ -5,7 +5,6 @@ import { fetchrestaurantCategory } from "../../../store/Reducer/RestaurantCatego
 
 const RestaurantItem = ({ Restaurant_category_id }) => {
   const { data, status } = useSelector((state) => state.category);
- 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchrestaurantCategory());
@@ -19,14 +18,15 @@ const RestaurantItem = ({ Restaurant_category_id }) => {
   if (status === STATUSES.ERROR) {
     return <h2>Something went wrong!</h2>;
   }
+
   return (
     <div>
-      {
-        data.RestaurantCategory?.filter(
-          (e) => e.id === Restaurant_category_id
-        ).map((e) => `category: ${e.category_name}`)}
+      {data.RestaurantCategory?.filter(
+        (e) => e.id === Restaurant_category_id
+      ).map((e) => `category: ${e.category_name}`)}
     </div>
-  );
+  )
+  
 };
 
 export default RestaurantItem;

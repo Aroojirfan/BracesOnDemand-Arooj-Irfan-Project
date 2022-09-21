@@ -1,4 +1,4 @@
-const Restaurant = [
+const Restaurants = [
   {
     id: 1,
     image: "static/images/pizza.jpeg",
@@ -7,6 +7,7 @@ const Restaurant = [
     Deliveryfee: "70 PKR",
     Rating: "4.2/5",
     Menu: 1,
+    Cityid: 1,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -19,6 +20,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.1/5",
     Menu: 2,
+    Cityid: 11,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -30,6 +32,7 @@ const Restaurant = [
     Deliveryfee: "90 PKR",
     Rating: "4.5/5",
     Menu: 3,
+    Cityid: 1,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -41,6 +44,7 @@ const Restaurant = [
     Deliveryfee: "100 PKR",
     Rating: "4.5/5",
     Menu: 4,
+    Cityid: 1,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -52,6 +56,7 @@ const Restaurant = [
     Deliveryfee: "120 PKR",
     Rating: "4.7/5",
     Menu: 5,
+    Cityid: 5,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -63,6 +68,7 @@ const Restaurant = [
     Deliveryfee: "50 PKR",
     Rating: "4.1/5",
     Menu: 6,
+    Cityid: 5,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -74,6 +80,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.2/5",
     Menu: 7,
+    Cityid: 6,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -85,6 +92,7 @@ const Restaurant = [
     Deliveryfee: "60 PKR",
     Rating: "4.4/5",
     Menu: 8,
+    Cityid: 6,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -96,6 +104,7 @@ const Restaurant = [
     Deliveryfee: "60 PKR",
     Rating: "4.5/5",
     Menu: 9,
+    Cityid: 7,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -107,6 +116,7 @@ const Restaurant = [
     Deliveryfee: "70 PKR",
     Rating: "4.5/5",
     Menu: 10,
+    Cityid: 8,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -118,6 +128,7 @@ const Restaurant = [
     Deliveryfee: "90 PKR",
     Rating: "4.6/5",
     Menu: 11,
+    Cityid: 4,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -129,6 +140,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.7/5",
     Menu: 12,
+    Cityid: 15,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -140,6 +152,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.7/5",
     Menu: 13,
+    Cityid: 9,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -151,6 +164,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.7/5",
     Menu: 14,
+    Cityid: 10,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -162,6 +176,7 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.7/5",
     Menu: 15,
+    Cityid: 3,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -173,6 +188,7 @@ const Restaurant = [
     Deliveryfee: "70 PKR",
     Rating: "4.6/5",
     Menu: 16,
+    Cityid: 14,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -184,6 +200,7 @@ const Restaurant = [
     Deliveryfee: "60 PKR",
     Rating: "4.6/5",
     Menu: 17,
+    Cityid: 2,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -195,6 +212,7 @@ const Restaurant = [
     Deliveryfee: "90 PKR",
     Rating: "4.8/5",
     Menu: 18,
+    Cityid: 13,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -206,6 +224,7 @@ const Restaurant = [
     Deliveryfee: "100 PKR",
     Rating: "4.8/5",
     Menu: 13,
+    Cityid: 2,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
@@ -217,9 +236,10 @@ const Restaurant = [
     Deliveryfee: "80 PKR",
     Rating: "4.5/5",
     Menu: 16,
+    Cityid: 12,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   },
 ];
 
-export default Restaurant;
+export default Restaurants;
