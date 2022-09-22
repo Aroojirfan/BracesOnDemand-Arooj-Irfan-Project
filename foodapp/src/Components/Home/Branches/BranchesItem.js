@@ -11,7 +11,7 @@ const BranchesItem = ({ id, city, image }) => {
     navigate("/Services");
   };
     return(
-    <div className="card-container" key={id}>
+    <div className="card-container" key={`branches-${id}`}>
       <div className="card">
         <div className="card-body">
           <span className="card-author subtle">{city}</span>
