@@ -9,7 +9,6 @@ const RoutesPages = () =>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Services" element={<ServicePage />} />
-        {/* <Route path="/Menu/:id" element={<MenuPage />} /> */}
         <Route path="/home" element={<HomePage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

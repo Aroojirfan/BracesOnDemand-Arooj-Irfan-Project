@@ -30,7 +30,7 @@ const Restaurants = ({ searchItem }) => {
   return (
     <div className="Restaurant">
       <h1>All Restaurants</h1>
-      <section className="main-card--cointainer">
+      <section className="main-card--cointainer1">
         {filteredData?.map(
           ({
             id,

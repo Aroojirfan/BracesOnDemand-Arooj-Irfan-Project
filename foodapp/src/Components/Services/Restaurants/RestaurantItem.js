@@ -18,15 +18,17 @@ const RestaurantItem = ({ Restaurant_category_id }) => {
   if (status === STATUSES.ERROR) {
     return <h2>Something went wrong!</h2>;
   }
-
+  
+  const result = Restaurant_category_id?.map(
+    (e) => data.RestaurantCategory?.filter((cur) => e === cur.id)
+   
+  );
   return (
     <div>
-      {data.RestaurantCategory?.filter(
-        (e) => e.id === Restaurant_category_id
-      ).map((e) => `category: ${e.category_name}`)}
+      <h4>Categories:</h4>
+      {result?.map((e) => e?.map((cur) => `${cur.category_name} `))}
     </div>
-  )
-  
+  );
 };
 
 export default RestaurantItem;

@@ -26,9 +26,9 @@ textarea {
 
 .button12 {
   position: absolute;
-  top:26rem;
-  bottom:0;
-  right:45rem;
+  top: 26rem;
+  bottom: 0;
+  right: 45rem;
   background: #d70f64;
   color: white;
   font-size: 2rem;
@@ -38,18 +38,17 @@ textarea {
   margin-left: 46rem;
   margin-top: 2rem;
   padding-top: 1rem;
-  padding-bottom:2rem ;
+  padding-bottom: 2rem;
   padding-left: 1rem;
 }
 .containerServices {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30rem;
+  height: 40rem;
   width: 150rem;
   padding-left: 7rem;
-  
+
   justify-content: center;
   align-items: center;
 }
-
