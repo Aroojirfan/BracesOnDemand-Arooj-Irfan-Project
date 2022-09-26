@@ -8,8 +8,7 @@ const MenuItemList = ({ id, image, name, description, price }) =>
         <img src={image} alt="" className="card-media1" />
         <span className="card-author subtle1">
           {" "}
-          {price}{" "}
-         
+          {price}{" "}      
         </span>
         <h2 className="card-title1">{name}</h2>
         <span className="card-description subtle1"></span>

@@ -1,8 +1,9 @@
 .menuItems {
-  margin-top: -8rem;
+  margin-top: -8em;
 }
 .container h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-top: -13rem;
 }
 .subtle {
   color: #d70f64;
@@ -24,7 +25,7 @@
 }
 
 .card-container1 {
-  margin: 25px auto 0;
+  margin: 20px auto 0;
   position: relative;
   display: grid;
   width: 82rem;
@@ -153,6 +154,7 @@
 h2 {
   color: #d70f64;
 }
+
 @media (max-width: 998px) {
   .main-card--cointainer {
     display: grid;
