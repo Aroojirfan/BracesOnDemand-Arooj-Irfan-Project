@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-const MenuItemList = ({ id, image, name, description, price }) => {
-  return (
+const MenuItemList = ({ id, image, name, description, price }) => 
+  
     <div className="card-container1" key={`menuItemscom-${id}`}>
     <div className="card1 ">
       <div className="card-body1">
@@ -21,7 +21,6 @@ const MenuItemList = ({ id, image, name, description, price }) => {
       </NavLink>
     </div>
   </div>
-  )
-}
+
 
 export default MenuItemList
