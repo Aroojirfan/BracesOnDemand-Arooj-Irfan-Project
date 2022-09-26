@@ -1,17 +1,30 @@
-.container {
+.containers {
   display: flex;
   flex-direction: column;
-  height: 130rem;
+  height: 230rem;
   justify-content: left;
   align-items: center;
+  font-size: 2rem;
 }
-.img {
-  content: "";
-  position: absolute;
-  height: 90%;
+.containerall {
+  display: flex;
+  flex-direction: column;
+  height: 790rem;
+  margin-top: 69rem;
+  margin-left: 4rem;
+  width: 90%;
+  box-shadow: 0 0 7px rgba(75, 75, 75, 1);
+}
+.card-mediamenu img {
+  height: 50%;
   top: 0px;
-  left: 0px;
-  width: 120%;
-  /* z-index: -1; */
-  /* opacity: 0.89; */
+  left: 10px;
+  width: 90%;
+  z-index: -1;
+  opacity: 0.89;
+}
+.card-authormenu {
+  color: #d70f64;
+  font-size: 2rem;
+  /* box-shadow: 0 0 7px rgba(75, 75, 75, 0.07); */
 }

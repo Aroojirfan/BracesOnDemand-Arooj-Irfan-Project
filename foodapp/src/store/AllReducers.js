@@ -4,6 +4,8 @@ import Addresses from "./Reducer/Addresses";
 import Branches from "./Reducer/Branches";
 import Restaurant from "./Reducer/Restaurant";
 import Menu from "./Reducer/Menu";
+import MenuItems from "./Reducer/MenuItems";
+import MenuCategory from "./Reducer/MenuCategory";
 const rootReducer = () =>
   combineReducers({
     product: Restaurant,
@@ -11,6 +13,8 @@ const rootReducer = () =>
     branch: Branches,
     category: RestaurantCategory,
     Menu:Menu,
+    MenuItems:MenuItems,
+    MenuCategory:MenuCategory,
   
   });
 

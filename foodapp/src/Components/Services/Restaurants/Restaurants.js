@@ -47,7 +47,7 @@ const Restaurants = ({ searchItem }) => {
                   <img src={image} alt="images" className="card-media" />
                   <span className="card-author subtle">
                     {" "}
-                    {Rating} <i className="fa fa-star" aria-hidden="true"></i>
+                    {Rating} <i className="fa fa-plus add-btn" ></i>
                   </span>
                   <h2 className="card-title"> {name} </h2>
                   <span className="card-description subtle">{description}</span>
