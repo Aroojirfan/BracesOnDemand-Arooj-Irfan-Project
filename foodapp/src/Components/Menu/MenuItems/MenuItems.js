@@ -37,7 +37,7 @@ const MenuItems = ({ menuItemsId }) => {
   }, []);
   const categoryFilter = (itemData) => {
     const filterData = menuItemsFiltered?.map((e) =>
-      e.filter(({ category }) => itemData == category)
+      e?.filter(({ category }) => itemData == category)
     );
     const filterdSingleCategory = filterData?.filter((e) => e != "");
     setMenuItemsdata(filterdSingleCategory);
