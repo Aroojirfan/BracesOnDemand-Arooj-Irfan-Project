@@ -1,13 +1,24 @@
-import React from "react";
+import React, {useContext } from "react";
 import "./Branches.css";
-const BranchesItem = ({ id, city, image }) => 
-  
-    <div className="card-container" key={id}>
+import { useNavigate } from "react-router-dom";
+import { UserDispatchContext } from "../../../App";
+const BranchesItem = ({ id, city, image }) => {
+  const setUserDetails = useContext(UserDispatchContext);
+  const navigate = useNavigate();
+
+  const navigateHome = () => {
+    setUserDetails(id)
+    navigate("/Services");
+  };
+    return(
+    <div className="card-container" key={`branches-${id}`}>
       <div className="card">
         <div className="card-body">
-          <span className="card-author subtle"> {city}</span>
+          <span className="card-author subtle">{city}</span>
         </div>
-        <img src={image} alt="images" className="card-media" />
+        <img  onClick={navigateHome} src={image} alt="images" className="card-media" />
       </div>
     </div>
+    )
+}
 export default BranchesItem;

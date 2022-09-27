@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
+import { UserContext } from "../../../App";
 import { useDispatch, useSelector } from "react-redux";
 import { STATUSES } from "../../../store/Reducer/Restaurant";
 import { fetchProducts } from "../../../store/Reducer/Restaurant";
@@ -8,12 +9,12 @@ import RestaurantItem from "./RestaurantItem";
 import { getData } from "../Utility";
 
 const Restaurants = ({ searchItem }) => {
+  const city = useContext(UserContext);
   const { data, status } = useSelector((state) => state.product);
-  
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchProducts());
+    dispatch(fetchProducts(city));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -22,15 +23,14 @@ const Restaurants = ({ searchItem }) => {
   }
 
   if (status === STATUSES.ERROR) {
-    return <h2>Something went wrong!</h2>;
+    return <h2>Something went wrong</h2>;
   }
-  const filteredData= getData(searchItem, data)
+  const filteredData = getData(searchItem, data);
 
   return (
     <div className="Restaurant">
       <h1>All Restaurants</h1>
-      <section className="main-card--cointainer">
-       
+      <section className="main-card--cointainer1">
         {filteredData?.map(
           ({
             id,
@@ -47,7 +47,7 @@ const Restaurants = ({ searchItem }) => {
                   <img src={image} alt="images" className="card-media" />
                   <span className="card-author subtle">
                     {" "}
-                    {Rating} <i className="fa fa-star" aria-hidden="true"></i>
+                    {Rating} <i className="fa fa-plus add-btn" ></i>
                   </span>
                   <h2 className="card-title"> {name} </h2>
                   <span className="card-description subtle">{description}</span>

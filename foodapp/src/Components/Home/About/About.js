@@ -1,6 +1,8 @@
 import React from "react";
+
+import Branches from "../Branches/Branches";
 import "./About.css";
-const About = () => 
+const About = () => (
   <div className="about">
     <div className="container">
       <div className="row">
@@ -25,6 +27,8 @@ const About = () =>
         </div>
       </div>
     </div>
+    {/* <Branches /> */}
   </div>
+);
 
 export default About;

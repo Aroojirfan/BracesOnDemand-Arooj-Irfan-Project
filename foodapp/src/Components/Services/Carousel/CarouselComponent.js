@@ -17,7 +17,7 @@ const CarouselComponent = ({ images }) => {
   return (
     <>
       {
-        images?.map(({ id, name, Images }) => (
+        images?.map(({ id, name, Images }) => 
           <div className="crousel" key={`images-${id}`}>
             <div className="content">
               <h1>{name}</h1>
@@ -32,7 +32,7 @@ const CarouselComponent = ({ images }) => {
               </Slider>
             </div>
           </div>
-        ))}
+        )}
     </>
   );
 };

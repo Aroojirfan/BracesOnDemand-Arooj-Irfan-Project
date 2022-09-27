@@ -1,21 +1,17 @@
 .Restaurant {
   margin-top: 20rem;
 }
-/* .branches h1 {
-  color: #d70f64;
-  font-size: 4rem;
-  font-family: "Bree Serif", serif;
-  margin-left: 7rem;
-} */
 .subtle {
   color: #d70f64;
 }
 
-.main-card--cointainer {
-  margin-left: 7rem;
+.main-card--cointainer1 {
+  margin-left: 8rem;
+  padding-right: 6rem;
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 300px));
+  grid-template-columns: repeat(4, minmax(100px, 400px));
   grid-gap: 1rem;
+  width: 120%;
   /* justify-content: space-between; */
 }
 
@@ -23,6 +19,7 @@
   margin: 25px auto 0;
   position: relative;
   display: grid;
+
   grid-template-columns: 1fr;
   justify-content: space-between;
   align-items: flex-start;
@@ -31,14 +28,14 @@
 
 .card-container img {
   max-width: 100%;
-  height: 200px;
+  height: 230px;
 }
 
 .card {
   background-color: #fff;
   padding: 10px;
   position: relative;
-  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+  box-shadow: 0 0 7px rgba(75, 75, 75, 0.07);
   z-index: 1;
 }
 
@@ -62,7 +59,7 @@
 }
 
 .card-author {
-  color:grey;
+  color: grey;
   display: block;
   font-size: 12px;
   letter-spacing: 0.5px;
@@ -130,7 +127,7 @@
   }
 }
 .card-author1 {
-  color:#d70f64;
+  color: #d70f64;
   display: block;
   font-size: 12px;
   letter-spacing: 0.5px;

@@ -55,9 +55,9 @@
 }
 .button1 {
   background: #d70f64;
-  color: white;
+  color: black;
   font-size: 2rem;
-  border: 2px solid #d70f64;
+  /* border: 2px solid #d70f64; */
   width: 15rem;
   height: 6rem;
   margin-left: 22rem;
@@ -73,5 +73,6 @@ span.login-text {
   margin-top: -9rem;
   font-family: "Bree Serif", serif;
 }
-
-
+button:disabled {
+  opacity: 0.3;
+}

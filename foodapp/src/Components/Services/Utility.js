@@ -1,5 +1,5 @@
 export const getData = (searchItem, data) => {
-  const filtered = data.Restaurant?.filter((curElem) => {
+  const filtered = data?.filter((curElem) => {
     if (searchItem === "") {
       return curElem;
     } else if (
