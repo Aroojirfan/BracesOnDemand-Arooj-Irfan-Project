@@ -20,6 +20,9 @@ li {
 }
 
 .main-nav {
+  position: sticky;
+  top: 0;
+  z-index :100;
   width: 100%;
   height: 10rem;
   display: grid;
@@ -71,7 +74,10 @@ li {
 }
 
 /* ----------- Grid part ends ----------------- */
-
+#basic-button{
+  margin-top: -13rem;
+  margin-left: 8rem;
+}
 .logo h2 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -93,7 +99,7 @@ li {
 
 .menu-link ul li a {
   text-transform: capitalize;
-  color: rgba(236, 240, 241 );
+  color: rgba(236, 240, 241);
   transition: 0.5s;
 }
 .menu-link ul li:hover > a {
@@ -113,7 +119,7 @@ li {
 
 .facebook {
   color: #3b5998;
-  size:2rem;
+  size: 2rem;
 }
 
 .instagram {

@@ -31,7 +31,7 @@ const MenuItems = ({ menuItemsId }) => {
     setMenuItemsdata(menuItemsFiltered);
     setNavMenuItemList([
       ...new Set(
-        menuItemsFiltered?.map((e) => e.map(({ category }) => category))
+        menuItemsFiltered?.map((e) => e?.map(({ category }) => category))
       ),
     ]);
   }, []);
