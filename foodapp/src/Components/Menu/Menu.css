@@ -17,8 +17,6 @@
 }
 .card-mediamenu img {
   height: 50%;
-  top: 0px;
-  left: 10px;
   width: 90%;
   z-index: -1;
   opacity: 0.89;

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { fetchMenu } from "../../store/Reducer/Menu";
 import { STATUSES } from "../../store/Reducer/Menu";
 import MenuItems from "./MenuItems/MenuItems";
+import MenuPoPupPageContent from "./MenuPoPupPage/MenuPoPupPageContent";
 
 const Menu = () => {
   const [menuData, setMenuData] = useState([]);
@@ -36,13 +37,14 @@ const Menu = () => {
 
   return (
     <div className="containerall">
-      <div className="container">
+      <div className="containermenu">
         {menuData?.map(({ id, image, description, menuItemsId }) => (
           <div key={`menu-${id}`}>
             <div className="card-mediamenu" key={`menu-${id}`}>
               <img src={image} alt="" className="card-mediamenu" />
-              <span className="card-authormenu">{` description : ${description}`}</span>
+              <span className="card-authormenu">{` Description : ${description}`}</span>
             </div>
+            <MenuPoPupPageContent image={image} description={description}/>
             <MenuItems menuItemsId={menuItemsId} />
           </div>
         ))}
