@@ -32,8 +32,6 @@ export default productSlice.reducer;
 
 // Thunks
 export const fetchProducts = createAsyncThunk("product/fetch", async (city) => {
-  // console.log(city)
   const response = await axios.get("/restaurant?city=" + city);
-  //  console.log(response.data)
   return response.data;
 });

@@ -1,0 +1,17 @@
+.total__p h3 {
+  color: #d70f64;
+}
+h3 {
+  color: #d70f64;
+}
+hr {
+  width: 20rem;
+  padding: 1;
+}
+.fas {
+  position: "absolute";
+  top: 2;
+  right: 20;
+  font-size: 23;
+  cursor: "pointer";
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MenuPoPupPage from "./MenuPoPupPage";
 import "./MenuPoPupPage.css";
+import PopCloseOutside from "./PopCloseOutside";
 const MenuPoPupPageContent = ({ image, description }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,6 +28,12 @@ const MenuPoPupPageContent = ({ image, description }) => {
           handleClose={togglePopup}
         />
       )}
+      <PopCloseOutside
+        show={isOpen}
+        onClickOutside={() => {
+          setIsOpen(false);
+        }}
+      />
     </div>
   );
 };

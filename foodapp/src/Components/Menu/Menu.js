@@ -25,20 +25,12 @@ const Menu = () => {
   if (status === STATUSES.ERROR) {
     <h2>Something went wrong!</h2>;
   }
-
-  const menuDataFilter = () => {
-    const menuDatafiltered = data.Menu?.filter((e) => e.id == id);
-    setMenuData(menuDatafiltered);
-  };
-
-  useEffect(() => {
-    menuDataFilter();
-  }, [id]);
+  const menuDatafiltered = data.Menu?.filter((e) => String(e.id) === id);
 
   return (
     <div className="containerall">
       <div className="containermenu">
-        {menuData?.map(({ id, image, description, menuItemsId }) => (
+        {menuDatafiltered?.map(({ id, image, description, menuItemsId }) => (
           <div key={`menu-${id}`}>
             <div className="card-mediamenu" key={`menu-${id}`}>
               <img src={image} alt="" className="card-mediamenu" />

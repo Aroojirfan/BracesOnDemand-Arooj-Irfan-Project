@@ -150,7 +150,13 @@ li {
   text-transform: uppercase;
   text-align: center;
 }
-
+.fa-close{
+  position: "absolute";
+  top: 2;
+  right: 20;
+  font-size: 23;
+  cursor: "pointer";
+}
 /* responsive css style  */
 @media (max-width: 1080px) {
   .main-nav {

@@ -14,7 +14,7 @@ const MenuItems = ({ menuItemsId }) => {
 
   useEffect(() => {
     dispatch(fetchMenuItems());
-  }, []);
+  }, [menuItemsId]);
 
   if (status === STATUSES.LOADING) {
     <h2>Loading....</h2>;
@@ -23,10 +23,10 @@ const MenuItems = ({ menuItemsId }) => {
   if (status === STATUSES.ERROR) {
     <h2>Something went wrong!</h2>;
   }
-
   const menuItemsFiltered = menuItemsId?.map((e) =>
-    data.MenuItems?.filter((cur) => e == cur.Mid)
+    data.MenuItems?.filter((cur) => e === cur.Mid)
   );
+
   useEffect(() => {
     setMenuItemsdata(menuItemsFiltered);
     setNavMenuItemList([
@@ -34,12 +34,12 @@ const MenuItems = ({ menuItemsId }) => {
         menuItemsFiltered?.map((e) => e?.map(({ category }) => category))
       ),
     ]);
-  }, []);
+  }, [data]);
   const categoryFilter = (itemData) => {
     const filterData = menuItemsFiltered?.map((e) =>
-      e?.filter(({ category }) => itemData == category)
+      e?.filter(({ category }) => String(itemData) === category)
     );
-    const filterdSingleCategory = filterData?.filter((e) => e != "");
+    const filterdSingleCategory = filterData?.filter((e) => String(e) !== "");
     setMenuItemsdata(filterdSingleCategory);
   };
 

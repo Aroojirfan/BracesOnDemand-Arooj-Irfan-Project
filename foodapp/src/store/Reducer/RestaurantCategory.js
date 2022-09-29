@@ -32,8 +32,7 @@ export default restaurantCategorySlice.reducer;
 
 // Thunks
 export const fetchrestaurantCategory = createAsyncThunk("category/fetch", async () => {
-    const response = await axios.get("/restaurantCategory");
-    
+    const response = await axios.get("/restaurantCategory"); 
     return response.data;
   }
 );

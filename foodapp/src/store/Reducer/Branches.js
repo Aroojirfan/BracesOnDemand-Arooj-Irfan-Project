@@ -35,10 +35,6 @@ export default branchSlice.reducer;
 
 // Thunks
 export const fetchBranches = createAsyncThunk("branch/fetch", async () => {
-  // console.log(getState())
-  // const state = getState()
-  // console.log(state)
-  
     const response = await axios.get("/branches");
    return response.data;
 });

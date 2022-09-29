@@ -6,6 +6,9 @@ import Restaurant from "./Reducer/Restaurant";
 import Menu from "./Reducer/Menu";
 import MenuItems from "./Reducer/MenuItems";
 import MenuCategory from "./Reducer/MenuCategory";
+import CartSlice from "./Reducer/ cartSlice";
+// import ShoppingCart from "./Reducer/ShoppingCart";
+
 const rootReducer = () =>
   combineReducers({
     product: Restaurant,
@@ -15,6 +18,8 @@ const rootReducer = () =>
     Menu:Menu,
     MenuItems:MenuItems,
     MenuCategory:MenuCategory,
+    CartSlice: CartSlice,
+    
   
   });
 

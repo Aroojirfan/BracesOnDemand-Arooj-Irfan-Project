@@ -14,9 +14,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NavItem from "./NavItem";
 import SocialmediaItem from "./SocialmediaItem";
 
-
 const Navbar = () => {
-  
   const socialMediaLinks = [
     {
       id: 1,
@@ -82,9 +80,8 @@ const Navbar = () => {
         {/* 3rd social media links */}
         <div className="social-media">
           <SocialmediaItem socialMediaLinks={socialMediaLinks} />
-          
-           
-         {/* <ShoppingCart /> */}
+
+          {/* <ShoppingCart /> */}
 
           <div className="hamburger-menu">
             <a href="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>

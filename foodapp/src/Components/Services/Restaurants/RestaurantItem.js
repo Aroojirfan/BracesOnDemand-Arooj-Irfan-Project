@@ -8,7 +8,6 @@ const RestaurantItem = ({ Restaurant_category_id }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchrestaurantCategory());
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (status === STATUSES.LOADING) {
@@ -18,10 +17,9 @@ const RestaurantItem = ({ Restaurant_category_id }) => {
   if (status === STATUSES.ERROR) {
     return <h2>Something went wrong!</h2>;
   }
-  
-  const result = Restaurant_category_id?.map(
-    (e) => data.RestaurantCategory?.filter((cur) => e === cur.id)
-   
+
+  const result = Restaurant_category_id?.map((e) =>
+    data.RestaurantCategory?.filter((cur) => e === cur.id)
   );
   return (
     <div>

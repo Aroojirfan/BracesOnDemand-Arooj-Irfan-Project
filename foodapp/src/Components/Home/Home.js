@@ -28,7 +28,6 @@ const Home = () => {
   }, [userDetails]);
 
   const navigateHome = () => {
-    // 👇️ navigate to /
     navigate("/Services");
   };
 
@@ -65,7 +64,6 @@ const Home = () => {
             </option>
           ))}
         </select>{" "}
-        {/* {!isValid && <p>You must choose a value</p>} */}
         <button className="button1" disabled={!isValid} onClick={navigateHome}>
           Delivery
         </button>
