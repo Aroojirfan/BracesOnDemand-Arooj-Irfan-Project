@@ -11,7 +11,7 @@ export const getData = (searchItem, data) => {
         .includes(searchItem.toString().toLowerCase())
     ) {
       return curElem;
-    }
+    } 
   });
   return filtered;
 };

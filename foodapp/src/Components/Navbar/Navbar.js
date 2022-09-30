@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Badge from "@mui/material/Badge";
-import Menu from "@mui/material/Menu";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import "./Navbar.css";
 import "./NavItem";
@@ -81,7 +79,7 @@ const Navbar = () => {
         <div className="social-media">
           <SocialmediaItem socialMediaLinks={socialMediaLinks} />
 
-          {/* <ShoppingCart /> */}
+          <ShoppingCart />
 
           <div className="hamburger-menu">
             <a href="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>
