@@ -1,7 +1,7 @@
 .containers {
   display: flex;
   flex-direction: column;
-  height: 230rem;
+  height: 250rem;
   justify-content: left;
   align-items: center;
   font-size: 2rem;
@@ -9,14 +9,14 @@
 .containerall {
   display: flex;
   flex-direction: column;
-  height: 790rem;
-  margin-top: 69rem;
+  height: 800rem;
+  margin-top: 56rem;
   margin-left: 4rem;
   width: 90%;
   box-shadow: 0 0 7px rgba(75, 75, 75, 1);
 }
 .card-mediamenu img {
-  height: 50%;
+  height: 60%;
   width: 90%;
   z-index: -1;
   opacity: 0.89;

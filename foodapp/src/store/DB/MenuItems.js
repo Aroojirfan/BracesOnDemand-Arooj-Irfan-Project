@@ -5,7 +5,7 @@ const MenuItems = [
     items: [
       {
         id: 1,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
         name: "Chicken Supreme",
         Menu_categoryid: 1,
         price: 599,
@@ -13,7 +13,7 @@ const MenuItems = [
       },
       {
         id: 2,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/0jv5gx1661040802.jpg",
         name: "Peri Peri Pizza",
         Menu_categoryid: 1,
         price: 500,
@@ -21,7 +21,7 @@ const MenuItems = [
       },
       {
         id: 3,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
         name: "Peri Peri Pizza",
         Menu_categoryid: 1,
         price: 500,
@@ -29,7 +29,7 @@ const MenuItems = [
       },
       {
         id:4,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/ingredients/Chicken.png",
         name: "Smoked Chicken",
         Menu_categoryid: 1,
         price: 678,
@@ -53,7 +53,7 @@ const MenuItems = [
       },
       {
         id: 6,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/k420tj1585565244.jpg",
         name: "Peri Peri Chicken",
         Menu_categoryid: 2,
         price: 698,
@@ -61,7 +61,7 @@ const MenuItems = [
       },
       {
         id: 7,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/n7qnkb1630444129.jpg",
         name: "Beef Cheese Burger",
         Menu_categoryid: 2,
         price: 700,
@@ -69,7 +69,7 @@ const MenuItems = [
       },
       {
         id: 8,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/k420tj1585565244.jpg",
         name: "Double Beef Burger",
         Menu_categoryid: 2,
         price: 750,
@@ -83,7 +83,7 @@ const MenuItems = [
     items: [
       {
         id: 9,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/u9l7k81628771647.jpg",
         name: "Chicken Tikka Sandwich",
         Menu_categoryid: 3,
         price: 398,
@@ -91,7 +91,7 @@ const MenuItems = [
       },
       {
         id: 10,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg",
         name: "Chicken BBQ Sandwich",
         Menu_categoryid: 3,
         price: 398,
@@ -99,7 +99,7 @@ const MenuItems = [
       },
       {
         id: 11,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/u9l7k81628771647.jpg",
         name: "Chicken Fajita Sandwich",
         Menu_categoryid: 3,
         price: 400,
@@ -107,7 +107,7 @@ const MenuItems = [
       },
       {
         id: 12,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
         name: "Peri Peri Sandwich",
         Menu_categoryid: 3,
         price: 450,
@@ -121,7 +121,7 @@ const MenuItems = [
     items: [
       {
         id: 13,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
         name: "Hot Wings",
         Menu_categoryid: 4,
         price: 298,
@@ -130,7 +130,7 @@ const MenuItems = [
       },
       {
         id: 14,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
         name: "Crispy Chicken Piece",
         Menu_categoryid: 4,
         price: 298,
@@ -139,7 +139,7 @@ const MenuItems = [
       },
       {
         id:15,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/y2irzl1585563479.jpg",
         name: "Crisparatha",
         Menu_categoryid: 4,
         price: 298,
@@ -148,7 +148,7 @@ const MenuItems = [
       },
       {
         id: 16,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg",
         name: "Crisparatha",
         Menu_categoryid: 5,
         price: 298,
@@ -164,7 +164,7 @@ const MenuItems = [
     items: [
       {
         id: 17,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
         name: "Mango Shake",
         Menu_categoryid: 5,
         price: 150,
@@ -173,7 +173,7 @@ const MenuItems = [
       },
       {
         id: 18,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
         name: "Oreo Chocolate Shake",
         Menu_categoryid: 5,
         price: 150,
@@ -182,7 +182,7 @@ const MenuItems = [
       },
       {
         id: 19,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
         name: "Apple Juice",
         Menu_categoryid: 5,
         price: 150,
@@ -192,7 +192,7 @@ const MenuItems = [
     
       {
         id: 20,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
         name: "Banana Date Mix",
         Menu_categoryid: 5,
         price: 150,
@@ -201,7 +201,7 @@ const MenuItems = [
       },
       {
         id: 21,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uuxwvq1483907861.jpg",
         name: "Apple Date Mix Shake",
         Menu_categoryid: 5,
         price: 150,
@@ -217,7 +217,7 @@ const MenuItems = [
     items: [
       {
         id: 22,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
         name: "Biryani",
         Menu_categoryid: 6,
         price: 200,
@@ -226,7 +226,7 @@ const MenuItems = [
       },
       {
         id: 23,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
         name: "Chicken Pulao",
         Menu_categoryid: 6,
         price: 250,
@@ -235,7 +235,7 @@ const MenuItems = [
       },
       {
         id: 24,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
         name: "Sada Biryani",
         Menu_categoryid: 6,
         price: 300,
@@ -244,7 +244,7 @@ const MenuItems = [
       },
       {
         id: 25,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
         name: "Shami Kabab",
         Menu_categoryid: 7,
         price: 80 ,
@@ -260,7 +260,7 @@ const MenuItems = [
     items: [
       {
         id: 26,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg",
         name: "Salad",
         Menu_categoryid: 7,
         price: 90 ,
@@ -269,7 +269,7 @@ const MenuItems = [
       },
       {
         id: 27,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/ypxvwv1505333929.jpg",
         name: "Raita",
         Menu_categoryid: 7,
         price: 90 ,
@@ -278,7 +278,7 @@ const MenuItems = [
       },
       {
         id: 28,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
         name: "Chicken & Drink",
         Menu_categoryid: 8,
         price: 800,
@@ -330,7 +330,7 @@ const MenuItems = [
     items: [
       {
         id: 32,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/uttuxy1511382180.jpg",
         name: "Nutella Brownie",
         Menu_categoryid: 9,
         price: 350,
@@ -339,7 +339,7 @@ const MenuItems = [
       },
       {
         id: 33,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg",
         name: "Belgian Malt Brownie",
         Menu_categoryid: 9,
         price: 400,
@@ -348,7 +348,7 @@ const MenuItems = [
       },
       {
         id: 34,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
         name: "Cadbury Brownie",
         Menu_categoryid: 9,
         price: 550,
@@ -364,7 +364,7 @@ const MenuItems = [
     items: [
       {
         id: 36,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/1d85821576790598.jpg",
         name: "Belgian Chocolate",
         Menu_categoryid: 10,
         price: 100,
@@ -373,7 +373,7 @@ const MenuItems = [
       },
       {
         id: 37,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg",
         name: "Ferrero Classic Cake",
         Menu_categoryid: 10,
         price: 105,
@@ -383,7 +383,7 @@ const MenuItems = [
       },
       {
         id: 38,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/vrspxv1511722107.jpg",
         name: "Nutella Cake",
         Menu_categoryid: 10,
         price: 150,
@@ -392,7 +392,7 @@ const MenuItems = [
       },
       {
         id: 39,
-        image: "https://spoonacular.com/recipeImages/579246-556x370.jpg",
+        image: "https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg",
         name: "Three Milk Cakee",
         Menu_categoryid: 10,
         price: 200,

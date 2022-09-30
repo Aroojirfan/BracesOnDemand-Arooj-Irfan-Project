@@ -9,7 +9,6 @@ import BreakFastImages from "./Carousel/assets/Images/Breakfast";
 import DessertImages from "./Carousel/assets/Images/Dessert";
 
 const Services = () => {
-
   const images = [
     { id: 1, name: "BreakFast", Images: BreakFastImages },
     { id: 2, name: "Fast Food", Images: FastFoodImages },
@@ -21,6 +20,7 @@ const Services = () => {
 
   return (
     <div>
+      <h1 className="searchh1">search or filter Items</h1>
       <div className="containerServices">
         <input
           type="text"
